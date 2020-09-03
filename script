@@ -1,0 +1,9 @@
+CREATE SCHEMA public
+    CREATE TABLE produtos
+(
+    id bigint NOT NULL,
+    categoria character varying(255) COLLATE pg_catalog."default",
+    nome character varying(255) COLLATE pg_catalog."default",
+    valor numeric(19,2),
+    CONSTRAINT produtos_pkey PRIMARY KEY (id)
+)
